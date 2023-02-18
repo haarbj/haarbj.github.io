@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+<section id="resume">
+    <h2>My Resume</h2>
+    <p>Download my resume <a href="Haar_Brody.pdf" download>here</a>.</p>
+</section>
+
 /* Style the header */
 header {
   background-color: #111;
