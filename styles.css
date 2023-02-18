@@ -1,21 +1,35 @@
 /* Set global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+a {
+  color: #8e8e8e;
+  text-decoration: none;
 }
 
 /* Style the header */
 header {
-  background-color: #333;
+  background-color: #111;
   color: #fff;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
 }
 
 header h1 {
   margin: 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -26,23 +40,33 @@ nav ul {
 }
 
 nav li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
 nav a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
   color: #fff;
-  text-decoration: none;
 }
 
 /* Style the main section */
 main {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 main h2 {
   margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 ul {
@@ -53,18 +77,30 @@ ul {
 
 li h3 {
   margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
+  color: #8e8e8e;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #fff;
 }
 
 /* Style the contact form */
 label {
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 input[type="text"],
@@ -72,20 +108,28 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
   margin-bottom: 1rem;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 input[type="submit"] {
-  background-color: #333;
+  background-color: #4ca1af;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #444;
+  background-color: #5cb6bf;
 }
